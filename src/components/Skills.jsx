@@ -1,0 +1,111 @@
+function Skills() {
+  const skillCategories = [
+    {
+      title: 'Languages',
+      color: '#a78bfa',
+      skills: ['Python', 'C', 'C++', 'Java', 'SQL'],
+    },
+    {
+      title: 'Frontend & Web',
+      color: '#60a5fa',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS'],
+    },
+    {
+      title: 'Databases',
+      color: '#34d399',
+      skills: ['MySQL', 'Firebase'],
+    },
+    {
+      title: 'Tools & Platforms',
+      color: '#f472b6',
+      skills: ['Git', 'GitHub', 'Arduino IDE', 'Jupyter Notebook', 'VS Code', 'Canva', 'MS Excel'],
+    },
+    {
+      title: 'CS Fundamentals',
+      color: '#fb923c',
+      skills: ['DSA', 'OOP', 'DBMS', 'Operating Systems'],
+    },
+    {
+      title: 'AI & ML',
+      color: '#38bdf8',
+      skills: ['Reinforcement Learning', 'Q-Learning', 'Generative AI', 'Agent Learning'],
+    },
+    {
+      title: 'Data Visualization Tools',
+      color: '#d4b316',
+      skills: ['Tableau', 'PowerBI'],
+    },
+  ]
+
+  return (
+    <section
+      id="skills"
+      className="py-24 px-6"
+      style={{ backgroundColor: '#0f0f1a' }}
+    >
+      <div className="max-w-6xl mx-auto">
+
+        {/* Section Heading */}
+        <div className="flex flex-col items-center text-center mb-16">
+          <span
+            className="text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4"
+            style={{
+              backgroundColor: 'rgba(96,165,250,0.15)',
+              border: '1px solid rgba(96,165,250,0.3)',
+              color: '#60a5fa'
+            }}
+          >
+            Technical Skills
+          </span>
+          <h2 className="text-3xl font-bold" style={{ color: '#e2e8f0' }}>
+            What I Work With
+          </h2>
+        </div>
+
+        {/* Skills Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillCategories.map((category) => (
+            <div
+              key={category.title}
+              className="p-6 rounded-2xl flex flex-col gap-4 transition-all duration-300"
+              style={{
+                backgroundColor: '#1a1a2e',
+                border: '1px solid #2a2a50'
+              }}
+              onMouseEnter={e => e.currentTarget.style.borderColor = category.color}
+              onMouseLeave={e => e.currentTarget.style.borderColor = '#2a2a50'}
+            >
+              {/* Category Title */}
+              <h3
+                className="text-sm font-semibold uppercase tracking-wider"
+                style={{ color: category.color }}
+              >
+                {category.title}
+              </h3>
+
+              {/* Skill Badges */}
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="text-xs font-medium px-3 py-1.5 rounded-full transition-all duration-200"
+                    style={{
+                      backgroundColor: `${category.color}15`,
+                      border: `1px solid ${category.color}40`,
+                      color: '#e2e8f0'
+                    }}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )
+}
+
+export default Skills
