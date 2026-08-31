@@ -4,7 +4,7 @@ function Education() {
       degree: 'Bachelor of Technology — Computer Science & Engineering',
       institution: 'KIET Group of Institutions, Ghaziabad',
       year: '2024 – 2028 (Expected)',
-      score: 'CGPA: 9.50',
+      score: 'CGPA: 9.38',
       description:
         'Focused on Data Structures, Algorithms, OOP, DBMS, and AI fundamentals. Actively involved in development clubs and NSS.',
       color: '#a78bfa',
@@ -33,7 +33,7 @@ function Education() {
     <section
       id="education"
       className="py-24 px-6"
-      style={{ backgroundColor: '#13132a' }}
+      // style={{ backgroundColor: '#13132a' }}
     >
       <div className="max-w-6xl mx-auto">
 

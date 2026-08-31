@@ -1,13 +1,16 @@
+import TypewriterText from './TypewriterText.jsx';
+
 function Hero() {
   return (
     <section
       id="hero"
       className="min-h-screen flex items-center px-6 pt-20"
-      style={{
-        background:
-          'radial-gradient(ellipse at 30% 50%, rgba(167,139,250,0.1) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(96,165,250,0.08) 0%, transparent 50%)',
-        backgroundColor: '#0f0f1a',
-      }}
+      // style={{
+      //   background:
+      //     'radial-gradient(ellipse at 30% 50%, rgba(167,139,250,0.1) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(96,165,250,0.08) 0%, transparent 50%)',
+      //   backgroundColor: '#0f0f1a',
+      // }}
+      
     >
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -55,12 +58,16 @@ function Hero() {
           </h1>
 
           {/* Role */}
-          <p
-            className="text-lg font-medium"
-            style={{ color: '#60a5fa' }}
-          >
-            Aspiring Software Developer & AI Enthusiast
-          </p>
+          <p className="text-2xl font-stretch-normal" style={{ color: '#60a5fa', minHeight: '28px' }}>
+  <TypewriterText
+      phrases={[
+  'Aspiring Software Engineer',
+  'Full Stack Developer',
+  'AI/ML Enthusiast',
+  'Problem Solver & DSA Enthusiast',
+]}
+  />
+</p>
 
 
 
@@ -69,7 +76,7 @@ function Hero() {
             className="text-sm leading-relaxed max-w-md"
             style={{ color: '#94a3b8' }}
           >
-            Second-year B.Tech. student at KIET with a 9.50 CGPA, focusing on building real-world solutions 
+            Third-year B.Tech. student at KIET with a 9.38 CGPA, focusing on building real-world solutions 
           </p>
 
           {/* Buttons */}

@@ -8,21 +8,31 @@ import Certifications from './components/Certifications'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
+import Particles from './components/Particles'
+import CustomCursor from './components/CustomCursor'
 
 function App() {
   return (
-    <div style={{backgroundColor: '#0f0f1a', minHeight: '100vh'}} className="font-sans">
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Achievements />
-      <Certifications />
-      <Education />
-      <Contact />
-    </div>
+    <>
+      <CustomCursor />
+
+      <div className="fixed-background">
+        <Particles count={50} />
+      </div>
+
+      <div className="site-content font-sans">
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Achievements />
+        <Certifications />
+        <Education />
+        <Contact />
+      </div>
+    </>
   )
 }
 

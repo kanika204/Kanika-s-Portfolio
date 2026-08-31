@@ -3,37 +3,42 @@ function Skills() {
     {
       title: 'Languages',
       color: '#a78bfa',
-      skills: ['Python', 'C', 'C++', 'Java', 'SQL'],
+      skills: [ 'C', 'C++', 'Python', 'Java', 'JavaScript'],
     },
     {
-      title: 'Frontend & Web',
+      title: 'Frontend',
       color: '#60a5fa',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS'],
+      skills: ['React.js', 'Redux Toolkit',   'Tailwind CSS', 'HTML5', 'CSS3'],
     },
     {
-      title: 'Databases',
+      title: 'Backend APIs',
       color: '#34d399',
-      skills: ['MySQL', 'Firebase'],
+      skills: ['Node.js', 'Express.js', 'Flask', 'REST API Design', 'JWT Authentication', 'Postman'],
     },
     {
-      title: 'Tools & Platforms',
+      title: 'Databases and Cloud',
       color: '#f472b6',
-      skills: ['Git', 'GitHub', 'Arduino IDE', 'Jupyter Notebook', 'VS Code', 'Canva', 'MS Excel'],
+      skills: ['MongoDB', 'MySQL', 'Firebase', 'AWS'],
     },
     {
-      title: 'CS Fundamentals',
+      title: 'AI / ML',
       color: '#fb923c',
-      skills: ['DSA', 'OOP', 'DBMS', 'Operating Systems'],
+      skills: ['Machine Learning', 'OpenCV', 'Mediapipe', 'NLP', 'Scikit-learn', 'TensorFlow', 'Keras', 'Numpy', 'Pandas', 'Matplotlib', 'Seaborn'],
     },
     {
-      title: 'AI & ML',
+      title: 'Generative AI',
       color: '#38bdf8',
-      skills: ['Reinforcement Learning', 'Q-Learning', 'Generative AI', 'Agent Learning'],
+      skills: ['LLM API Integration', 'Prompt Engineering', 'Retrieval-Augmented Generation'],
     },
     {
-      title: 'Data Visualization Tools',
+      title: 'Tools and Analytics',
       color: '#d4b316',
-      skills: ['Tableau', 'PowerBI'],
+      skills: ['Git/GitHub', 'Tableau,', 'PowerBI' , 'MS Excel', 'Arduino IDE', 'Figma', 'VS Code', 'Jupyter Notebook', 'Canva', 'AutoCAD'],
+    },
+        {
+      title: 'CS Fundamentals',
+      color: '#13b8a6',
+      skills: ['DSA', 'OS', 'DBMS', 'OOP', 'CN'],
     },
   ]
 
@@ -41,7 +46,7 @@ function Skills() {
     <section
       id="skills"
       className="py-24 px-6"
-      style={{ backgroundColor: '#0f0f1a' }}
+      // style={{ backgroundColor: '#0f0f1a' }}
     >
       <div className="max-w-6xl mx-auto">
 

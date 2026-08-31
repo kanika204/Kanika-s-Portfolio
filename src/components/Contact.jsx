@@ -66,7 +66,7 @@ const handleSubmit = async (e) => {
     <section
       id="contact"
       className="py-24 px-6"
-      style={{ backgroundColor: '#0f0f1a' }}
+      // style={{ backgroundColor: '#0f0f1a' }}
     >
       <div className="max-w-6xl mx-auto">
 

@@ -1,0 +1,47 @@
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: #60a5fa;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid rgba(121, 77, 252, 0.5);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+}
+
+.cursor-ring.cursor-hover {
+  width: 50px;
+  height: 50px;
+  border-color: #60a5fa;
+  background: rgba(96, 165, 250, 0.1);
+}
+
+/* hide default cursor everywhere */
+* {
+  cursor: none !important;
+}
+
+/* re-enable default cursor on mobile/touch devices where this effect doesn't apply */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+  * {
+    cursor: auto !important;
+  }
+}

@@ -3,7 +3,7 @@ function About() {
     <section
       id="about"
       className="py-24 px-6"
-      style={{ backgroundColor: '#13132a' }}
+      // style={{ backgroundColor: '#13132a' }}
     >
       <div className="max-w-6xl mx-auto">
 

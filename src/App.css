@@ -17,6 +17,27 @@
   }
 }
 
+.fixed-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: 
+    radial-gradient(ellipse at 20% 30%, rgba(124, 58, 237, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
+    #0f0f1a;
+}
+
+.site-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* let the fixed background show through every section */
+.site-content > * {
+  background: transparent !important;
+}
+
 .hero {
   position: relative;
 

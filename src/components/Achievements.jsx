@@ -1,5 +1,13 @@
 function Achievements() {
   const achievements = [
+      {
+  title: 'Finalist, HackVega 2.0',
+  description:
+    'Selected as a finalist in HackVega 2.0, a National Engineering Hackathon organized by HirePro & MyCareernet.',
+  category: 'Hackathon',
+  icon: '🏆',
+  color: '#f472b6',
+      },
     {
       title: 'Academic Brilliance Award',
       description:
@@ -22,7 +30,7 @@ function Achievements() {
     <section
       id="achievements"
       className="py-24 px-6"
-      style={{ backgroundColor: '#13132a' }}
+      // style={{ backgroundColor: '#13132a' }}
     >
       <div className="max-w-6xl mx-auto">
 
