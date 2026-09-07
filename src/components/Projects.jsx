@@ -26,6 +26,52 @@ function Projects() {
       live: null,
     },
     {
+  title: 'Driver Drowsiness Alert System',
+  status: 'Completed',
+  description:
+    'A real-time driver drowsiness detection system that uses deep learning and computer vision to identify drowsiness from webcam input.',
+  points: [
+    'Developed a real-time drowsiness detection system using a MobileNetV2-based CNN for binary classification.',
+    'Leveraged transfer learning with a pretrained MobileNetV2 model for efficient visual feature extraction.',
+    'Built an interactive Streamlit interface with real-time camera monitoring and drowsiness status visualization using OpenCV.',
+  ],
+  tech: [
+    'Python',
+    'TensorFlow',
+    'Keras',
+    'OpenCV',
+    'Streamlit',
+    'MobileNetV2',
+    'CNN',
+  ],
+  color: '#60a5fa',
+  github: 'https://github.com',
+  live: null,
+},
+
+{
+  title: 'Lost & Found Platform',
+  status: 'Ongoing',
+  description:
+    'A modern web platform for schools and colleges that helps students report, search, and recover lost items through an organized digital system.',
+  points: [
+    'Developing a responsive platform for reporting, searching, and recovering lost items.',
+    'Designed item listings with category-based filtering and search functionality for easy discovery.',
+    'Building personalized user dashboards to provide an organized and user-friendly experience.',
+  ],
+  tech: [
+    'React',
+    'Redux Toolkit',
+    'Tailwind CSS',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+  ],
+  color: '#a78bfa',
+  github: 'https://github.com',
+  live: null,
+},
+    {
   title: 'Personal Portfolio Website',
   status: 'Completed',
   description:

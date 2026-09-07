@@ -1,6 +1,17 @@
 function Experience() {
   const experiences = [
     {
+  role: 'Artificial Intelligence (AI) Intern',
+  organization: 'Decode Labs',
+  duration: 'June 2026 – July 2026',
+  type: 'Internship',
+  description:
+    'Completed a virtual AI internship at Decode Labs, working on machine learning projects involving data preprocessing, model training, evaluation, and real-world AI applications under industry mentor guidance.',
+  skills: ['Python', 'Machine Learning', 'Data Preprocessing', 'Model Evaluation', 'Git'],
+  color: '#60a5fa',
+  icon: '🤖',
+},
+    {
       role: 'Member',
       organization: 'Innogeeks — Development Club, KIET',
       duration: '2024 – Present',
